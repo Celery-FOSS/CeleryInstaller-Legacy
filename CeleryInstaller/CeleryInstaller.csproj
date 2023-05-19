@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <!--PublishAot>true</PublishAot-->                                      <!--UNCOMMENT IF YOU WANNA PUBLISH THE PROJECT AS NATIVE CODE!-->
+        <!--StripSymbols>true</StripSymbols-->                                  <!--UNCOMMENT IF YOU WANNA PUBLISH THE PROJECT AS NATIVE CODE!-->
+        
+        <PublishSingleFile>true</PublishSingleFile>                             <!--UNCOMMENT IF YOU WANNA PUBLISH AS MSIL!-->
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>     <!--UNCOMMENT IF YOU WANNA PUBLISH AS MSIL!-->
+        
+        <PublishTrimmed>true</PublishTrimmed>
+        <ApplicationIcon>CeleryLogo.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="RedistributableChecker2022" Version="0.2.3" />
+      <PackageReference Include="Spectre.Console" Version="0.46.0" />
+    </ItemGroup>
+
+</Project>
